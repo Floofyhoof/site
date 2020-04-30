@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- the head is the hidden code you don't see on the webpage -->
+    <title>Text Page</title>
+    <!-- title is on browser tab and good for search enginges to find -->
+
+    <!-- style is how you add internal css to decorate the html elements -->
+    <style>
+      /* start with general and work toward specific styles */
+      body {
+        color: #333;
+        background-color: #d7b377;
+      }
+
+      p {
+        color: #860828;
+      }
+
+      /* classes can be applied to multiple elements. the name starts with a period in css */
+      .class {
+        color: white;
+        font-size: 20px;
+        font-weight: 900;
+      }
+
+      .class2 {
+        color: red;
+      }
+
+      /* each id is only applied once in the html. the name starts with a pound sign # in css */
+      #id {
+        color: #9934f3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- the body is what you see, it is all the content on the page -->
+    <h1>This is a headline</h1>
+
+    <h2>This is a smaller headline</h2>
+
+    <p>this is paragraph text.</p>
+
+    <!-- the assignment sheet lists a bunch of different tags for text elements and basic formatting. i want you to fill in this document with all of those elements. 
+    
+    some of the tags are for actual text elements and some are inline, meaning you apply them inside of text elements. the following text element has an inline italic applied -->
+    <p>this paragraph text has <em>italic text</em> as inline formatting.</p>
+
+    <p class="class">
+      this paragraph text has a class of "class" applied so the css rule .class
+      will affect it. you can have many elements with .class applied
+    </p>
+
+    <p id="id" class="class">
+      this paragraph text has a class of "class" applied so the css rule .class
+      will affect it. you can have many elements with .class applied. it also
+      has an id of "id" applied. you only get to use each id once in a page.
+      note the id overwrites the rule for the class.
+    </p>
+
+    <p class="class2 class">
+      this paragraph text has both classes of "class" and "class2" applied. it
+      is red because "class2" is listed last in the css list and so it
+      overwrites what values were defined before.
+    </p>
+
+    <p>this paragraph text has <span class="class2">a span with "class2" applied</span> as inline formatting.</p>
+
+    <p>
+      you can right-click and hit "view page source" to see the code. copy/paste
+      snippets into your own code or save the entire document to your files to
+      get started.
+    </p>
+  </body>
+</html>
